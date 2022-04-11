@@ -4,9 +4,42 @@
  <meta charset="UTF-8">
  <meta http-equiv="X-UA-Compatible" content="IE=edge">
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <title>Document  name</title>
+ <title>Summer Sports Camp</title>
+ <link rel="stylesheet" href="styles.css">
 </head>
 <body>
- 
+<div class="container">
+ <header class="header">
+  <h1 id="title" class="text-center">Summer Sports Camp Survey form</h1>
+  <p id="description" class="description text-center">Please provide the suggestions to help us improve the services</p>
+ </header>
+ <form id="survey-form">
+  <div class="form-group">
+   <label id="name-label" for="name">Name</label>
+   <input type="text" class="form-control" id="name" placeholder="Enter your name" required/>
+  </div>
+  <div class="form-group">
+   <label id="email-label" for="email">Email</label>
+   <input type="email" class="form-control" id="Email" placeholder="Enter your email" required />
+  </div>
+  <div class="form-group">
+   <label id="age-label" for="age">Age</label>
+   <input type="number" name="age" class="form-control" id="number" min="10" max="99" placeholder="Age" required />
+  </div>
+  <div class="form-group">
+   <p>Describe your current status</p>
+   <select id="dropdown" name="role" class="form-control" required>
+   <option value="disabled selection">select current status</option>
+   <option value="student">student</option>
+   <option value="full-time worker">full-time worker</option>
+   <option value="part-time worker">part-time worker</option>
+   <option value="prefer no to say">prefer no to say</option>
+   <option value="others">others</option>
+   </select>
+  </div>
+  
+
+ </form>
+</div>
 </body>
 </html>
